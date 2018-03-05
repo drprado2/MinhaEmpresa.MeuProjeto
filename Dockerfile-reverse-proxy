@@ -1,8 +1,12 @@
 FROM nginx:alpine
 
-RUN rm /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/conf.d/default.conf && cd / && mkdir certificate
 
-ADD ./reverse-proxy/nginx/config/default.conf /etc/nginx/conf.d/
+ADD ./reverseproxy/nginx/certificate-files/fullchain.pem /certificate/
+
+ADD ./reverseproxy/nginx/certificate-files/privkey.pem /certificate/
+
+ADD ./reverseproxy/nginx/config/default.conf /etc/nginx/conf.d/
 
 CMD ["nginx", "-g", "daemon off;"]
 
