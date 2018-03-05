@@ -1,8 +1,52 @@
+# Foi usado essa imagem de debian por escolha pessoal, poderia usar outras versões do debian ou ubuntu, etc.
 FROM debian:stretch-slim
 
+# é setado essa workdir apenas por conta das instalações abaixo, poderia ser usado um cd nos comandos do RUN também.
 WORKDIR /usr/local/sbin
 
+# esses comandos são usados para instalar o certbot-auto que será usado para gerar o certificado com o lets-encrypt
 RUN apt-get update &&\
     apt-get install -y wget &&\
     wget https://dl.eff.org/certbot-auto &&\
     chmod a+x /usr/local/sbin/certbot-auto
+
+# Para usar essa a imagem à ser gerada: Você precisara ter acesso ao diretório root do website configurado no nginx
+# logo você poderia ter no HOST um /html => mapear como volume no nginx EX: -v $(pwd)/html:/usr/share/nginx/html
+# e ai você contruiria um container usando a nossa imagem mais ou menos assim docker run -it -v $(pwd)/html:/html minha-imagem
+# e ai após você ter o nginx de pé com as devidas configurações, você usando o bash do nosso container usaria o seguinte comando
+# certbot-auto certonly -a webroot --webroot-path=/html -d seusite.com -d www.seusite.com 
+# A saída desse comando vai gerar os certificados.
+
+
+# Configuração do default.conf do nginx, antes do certificado deve ser
+# server {
+# 		location ~ ^/.well-known {
+#		root /usr/share/nginx/html;
+#		allow all;
+#        	}
+# }
+# Com essa configuração você consegue gerar o certificado, depois de gerado você configura o default.conf da seguinte maneira:
+#server {
+#	listen 443 ssl;
+#	server_name adrianooliveira.tk www.adrianooliveira.tk;
+#
+#	ssl_certificate /certificate/fullchain.pem;
+#	ssl_certificate_key /certificate/privkey.pem;
+#
+#	location / {
+#		root /usr/share/nginx/html;
+#		index index.html index.htm;
+#	}
+#	
+#	location ~ ^/.well-known {
+#		root /usr/share/nginx/html;
+#		allow all;
+#       }
+#}
+#
+#server {
+#	listen 80;
+#	server_name adrianooliveira.tk www.adrianooliveira.tk;
+#	return 301 https://$host$request_uri;
+#}
+# Dessa maneira você já faz o redirect da 80 para a 443
