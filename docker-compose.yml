@@ -10,3 +10,31 @@ services:
       ports:
          - 80:80
          - 443:443
+      networks:
+         - dominionet
+      depends_on:
+         - dominiohost
+
+   dominiobuilder:
+      build:
+         context: ./app-api
+         dockerfile: Dockerfile-dominio-builder
+      volumes:
+         - dominiopublish:/publish  
+
+   dominiohost:
+      build:
+         context: ./app-api
+         dockerfile: Dockerfile-dominio-host
+      volumes:
+         - dominiopublish:/app
+      depends_on:
+         - dominiobuilder
+      networks:
+         - dominionet
+
+volumes:
+   dominiopublish:
+
+networks:
+   dominionet:

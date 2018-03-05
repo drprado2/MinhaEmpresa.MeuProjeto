@@ -1,0 +1,10 @@
+FROM microsoft/aspnetcore-build:2.0
+
+RUN mkdir projects && mkdir /publish 
+
+ADD ./ /projects/
+
+WORKDIR /projects
+
+RUN dotnet restore -v minimal && dotnet publish --output /publish/
+

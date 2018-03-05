@@ -1,0 +1,10 @@
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/bin/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.deps.json
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/bin/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.runtimeconfig.json
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/bin/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.runtimeconfig.dev.json
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/bin/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.dll
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/bin/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.pdb
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.csproj.CoreCompileInputs.cache
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.AssemblyInfoInputs.cache
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.AssemblyInfo.cs
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.dll
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Api/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.pdb
