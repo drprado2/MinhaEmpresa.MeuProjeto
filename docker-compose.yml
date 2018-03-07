@@ -19,6 +19,8 @@ services:
       build:
          context: ./app-api
          dockerfile: Dockerfile-dominio-builder
+      depends_on:
+            - dominiodb
       volumes:
          - dominiopublish:/publish  
 
@@ -30,8 +32,16 @@ services:
          - dominiopublish:/app
       depends_on:
          - dominiobuilder
+         - dominiodb
       networks:
          - dominionet
+
+   dominiodb:
+      image: postgres:10-alpine
+      environment:
+            - POSTGRES_PASSWORD=teste123
+      networks:
+            - dominionet
 
 volumes:
    dominiopublish:

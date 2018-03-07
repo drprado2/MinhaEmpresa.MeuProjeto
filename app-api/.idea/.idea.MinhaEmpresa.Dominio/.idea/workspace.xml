@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d66b217b-5e82-46fb-978a-56a9eb391b49" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MyContext.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Contexts/MyContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <marker date="1520405903708" expanded="true" signature="6:191" ph="..." />
+                <marker date="1520405903708" expanded="true" signature="247:599" ph="{...}" />
+                <marker date="1520405903708" expanded="true" signature="288:597" ph="{...}" />
+                <marker date="1520405903708" expanded="true" signature="372:392" ph="{...}" />
+                <marker date="1520405903708" expanded="true" signature="524:591" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <marker date="1520409948372" expanded="true" signature="6:641" ph="..." />
+                <marker date="1520409948372" expanded="true" signature="677:2082" ph="{...}" />
+                <marker date="1520409948372" expanded="true" signature="704:2080" ph="{...}" />
+                <marker date="1520409948372" expanded="true" signature="763:826" ph="{...}" />
+                <marker date="1520409948372" expanded="true" signature="948:1502" ph="{...}" />
+                <marker date="1520409948372" expanded="true" signature="1591:1768" ph="{...}" />
+                <marker date="1520409948372" expanded="true" signature="1638:1715" ph="{...}" />
+                <marker date="1520409948372" expanded="true" signature="1847:2074" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/Customer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding>
+                <marker date="1520405807520" expanded="true" signature="61:502" ph="{...}" />
+                <marker date="1520405807520" expanded="true" signature="102:500" ph="{...}" />
+                <marker date="1520405807520" expanded="true" signature="137:157" ph="{...}" />
+                <marker date="1520405807520" expanded="true" signature="231:336" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerMapping.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Mappings/CustomerMapping.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <marker date="1520393632556" expanded="false" signature="6:80" ph="..." />
+                <marker date="1520393632556" expanded="true" signature="136:610" ph="{...}" />
+                <marker date="1520393632556" expanded="true" signature="171:608" ph="{...}" />
+                <marker date="1520393632556" expanded="true" signature="235:602" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+              <folding>
+                <marker date="1520407058841" expanded="true" signature="6:214" ph="..." />
+                <marker date="1520407058841" expanded="true" signature="262:1183" ph="{...}" />
+                <marker date="1520407058841" expanded="true" signature="342:1181" ph="{...}" />
+                <marker date="1520407058841" expanded="true" signature="477:545" ph="{...}" />
+                <marker date="1520407058841" expanded="true" signature="619:736" ph="{...}" />
+                <marker date="1520407058841" expanded="true" signature="837:1175" ph="{...}" />
+                <marker date="1520407058841" expanded="true" signature="863:1009" ph="{...}" />
+                <marker date="1520407058841" expanded="true" signature="1045:1165" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateCustomer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CreateCustomer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding>
+                <marker date="1520394457173" expanded="true" signature="42:215" ph="{...}" />
+                <marker date="1520394457173" expanded="true" signature="76:213" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appsettings.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/appsettings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinhaEmpresa.Dominio.Api.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/MinhaEmpresa.Dominio.Api.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinhaEmpresa.Dominio.sln" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.sln">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinhaEmpresa.Dominio.Domain.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/MinhaEmpresa.Dominio.Domain.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/Customer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/EntityBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Mappings/CustomerMapping.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Contexts/MyContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Services/CustomerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CreateCustomer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Interfaces/IRepositoryBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CustomerResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/RepositoryBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Interfaces/ICustomerService.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/MyContext.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/EntityBase.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Mappings/CustomerMapping.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CustomerResponse.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CreateCustomer.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Interfaces/IRepositoryBase.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/RepositoryBase.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Services/CustomerService.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Interfaces/ICustomerService.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/MinhaEmpresa.Dominio.Infra.csproj" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/config.json" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/Customer.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/MinhaEmpresa.Dominio.Api.csproj" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/appsettings.json" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Contexts/MyContext.cs" />
+        <option value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Startup.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Api" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Api" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Api" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name=".NETCoreApp 2" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Api" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name=".NETCoreApp 2" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Packages" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Api" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name=".NETCoreApp 2" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SDK" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Api" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Controllers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Domain" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Domain" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Entities" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Infra" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Infra" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DataBase" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Infra" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DataBase" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Contexts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="MinhaEmpresa.Dominio (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="MinhaEmpresa.Dominio.Infra" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DataBase" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Mappings" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.MinhaEmpresa.Dominio.Api">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <configuration name="MinhaEmpresa.Dominio.Api" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/bin/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Api.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/MinhaEmpresa.Dominio.Api.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.MinhaEmpresa.Dominio.Api" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.MinhaEmpresa.Dominio.Api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d66b217b-5e82-46fb-978a-56a9eb391b49" name="Default" comment="" />
+      <created>1520392535421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520392535421</updated>
+      <workItem from="1520392539044" duration="247000" />
+      <workItem from="1520392821017" duration="13911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14158000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30232558" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53333336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26511627" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23426294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22325581" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs" initialLine="23">
+            <startOffsets>
+              <startOffset value="642" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="692" />
+            </endOffsets>
+          </properties>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs" initialLine="24">
+            <startOffsets>
+              <startOffset value="705" />
+            </startOffsets>
+            <endOffsets>
+              <endOffset value="712" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Contexts/MyContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520405903708" expanded="true" signature="6:191" ph="..." />
+            <marker date="1520405903708" expanded="true" signature="247:599" ph="{...}" />
+            <marker date="1520405903708" expanded="true" signature="288:597" ph="{...}" />
+            <marker date="1520405903708" expanded="true" signature="372:392" ph="{...}" />
+            <marker date="1520405903708" expanded="true" signature="524:591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/EntityBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <marker date="1520393163879" expanded="true" signature="61:249" ph="{...}" />
+            <marker date="1520393163879" expanded="true" signature="100:247" ph="{...}" />
+            <marker date="1520393163879" expanded="true" signature="134:187" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Interfaces/IRepositoryBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1520394848051" expanded="true" signature="6:107" ph="..." />
+            <marker date="1520394848051" expanded="true" signature="157:308" ph="{...}" />
+            <marker date="1520394848051" expanded="true" signature="219:306" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CustomerResponse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <marker date="1520394457153" expanded="true" signature="57:269" ph="{...}" />
+            <marker date="1520394457153" expanded="true" signature="93:267" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Services/CustomerService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <marker date="1520395275749" expanded="true" signature="6:212" ph="..." />
+            <marker date="1520395275749" expanded="true" signature="260:1136" ph="{...}" />
+            <marker date="1520395275749" expanded="true" signature="314:1134" ph="{...}" />
+            <marker date="1520395275749" expanded="true" signature="462:520" ph="{...}" />
+            <marker date="1520395275749" expanded="true" signature="591:752" ph="{...}" />
+            <marker date="1520395275749" expanded="true" signature="815:1128" ph="{...}" />
+            <marker date="1520395275749" expanded="true" signature="963:1107" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Interfaces/ICustomerService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <marker date="1520395225916" expanded="true" signature="6:103" ph="..." />
+            <marker date="1520395225916" expanded="true" signature="153:316" ph="{...}" />
+            <marker date="1520395225916" expanded="true" signature="193:314" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/RepositoryBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1520395275777" expanded="true" signature="6:242" ph="..." />
+            <marker date="1520395275777" expanded="true" signature="289:844" ph="{...}" />
+            <marker date="1520395275777" expanded="true" signature="368:842" ph="{...}" />
+            <marker date="1520395275777" expanded="true" signature="477:529" ph="{...}" />
+            <marker date="1520395275777" expanded="true" signature="586:707" ph="{...}" />
+            <marker date="1520395275777" expanded="true" signature="758:836" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/MinhaEmpresa.Dominio.Infra.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/dotnet/sdk/2.1.4/Sdks/Microsoft.NET.Sdk/build/Microsoft.NET.Sdk.DefaultItems.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="197" column="4" lean-forward="false" selection-start-line="197" selection-start-column="4" selection-end-line="197" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520225041000" expanded="false" signature="6:255" ph="..." />
+            <marker date="1520225041000" expanded="true" signature="291:612" ph="{...}" />
+            <marker date="1520225041000" expanded="true" signature="318:610" ph="{...}" />
+            <marker date="1520225041000" expanded="true" signature="371:429" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Mappings/CustomerMapping.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1520393632556" expanded="false" signature="6:80" ph="..." />
+            <marker date="1520393632556" expanded="true" signature="136:610" ph="{...}" />
+            <marker date="1520393632556" expanded="true" signature="171:608" ph="{...}" />
+            <marker date="1520393632556" expanded="true" signature="235:602" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Entities/Customer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <marker date="1520405807520" expanded="true" signature="61:502" ph="{...}" />
+            <marker date="1520405807520" expanded="true" signature="102:500" ph="{...}" />
+            <marker date="1520405807520" expanded="true" signature="137:157" ph="{...}" />
+            <marker date="1520405807520" expanded="true" signature="231:336" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Controllers/CustomerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="61" lean-forward="false" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <folding>
+            <marker date="1520407058841" expanded="true" signature="6:214" ph="..." />
+            <marker date="1520407058841" expanded="true" signature="262:1183" ph="{...}" />
+            <marker date="1520407058841" expanded="true" signature="342:1181" ph="{...}" />
+            <marker date="1520407058841" expanded="true" signature="477:545" ph="{...}" />
+            <marker date="1520407058841" expanded="true" signature="619:736" ph="{...}" />
+            <marker date="1520407058841" expanded="true" signature="837:1175" ph="{...}" />
+            <marker date="1520407058841" expanded="true" signature="863:1009" ph="{...}" />
+            <marker date="1520407058841" expanded="true" signature="1045:1165" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/Dtos/CreateCustomer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <marker date="1520394457173" expanded="true" signature="42:215" ph="{...}" />
+            <marker date="1520394457173" expanded="true" signature="76:213" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/MinhaEmpresa.Dominio.Api.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Domain/MinhaEmpresa.Dominio.Domain.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Infra/DataBase/Contexts/MyContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1520405903708" expanded="true" signature="6:191" ph="..." />
+            <marker date="1520405903708" expanded="true" signature="247:599" ph="{...}" />
+            <marker date="1520405903708" expanded="true" signature="288:597" ph="{...}" />
+            <marker date="1520405903708" expanded="true" signature="372:392" ph="{...}" />
+            <marker date="1520405903708" expanded="true" signature="524:591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaEmpresa.Dominio.Api/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <marker date="1520409948372" expanded="true" signature="6:641" ph="..." />
+            <marker date="1520409948372" expanded="true" signature="677:2082" ph="{...}" />
+            <marker date="1520409948372" expanded="true" signature="704:2080" ph="{...}" />
+            <marker date="1520409948372" expanded="true" signature="763:826" ph="{...}" />
+            <marker date="1520409948372" expanded="true" signature="948:1502" ph="{...}" />
+            <marker date="1520409948372" expanded="true" signature="1591:1768" ph="{...}" />
+            <marker date="1520409948372" expanded="true" signature="1638:1715" ph="{...}" />
+            <marker date="1520409948372" expanded="true" signature="1847:2074" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

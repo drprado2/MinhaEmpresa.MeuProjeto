@@ -6,5 +6,7 @@ ADD ./ /projects/
 
 WORKDIR /projects
 
-RUN dotnet restore -v minimal && dotnet publish --output /publish/
+RUN dotnet restore &&\
+    cd MinhaEmpresa.Dominio.Api &&\
+   dotnet publish --output /publish/
 
