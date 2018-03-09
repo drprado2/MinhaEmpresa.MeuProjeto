@@ -18,7 +18,7 @@ namespace MinhaEmpresa.Dominio.Domain.Services
         
         public async Task CreateAsync(CreateCustomer request)
         {
-            var customer = new Customer(request.Nome, request.Idade, request.Telefone);
+            var customer = new Customer(request.Nome, request.Idade, request.Telefone, request.Endereco);
             await _repository.CreateAsync(customer);
         }
 
@@ -30,7 +30,8 @@ namespace MinhaEmpresa.Dominio.Domain.Services
                 Id = x.Id,
                 Idade = x.Idade,
                 Nome = x.Nome,
-                Telefone = x.Telefone
+                Telefone = x.Telefone,
+                Endereco = x.Endereco
             }).ToList();
         }
     }

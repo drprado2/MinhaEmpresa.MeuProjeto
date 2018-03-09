@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using MinhaEmpresa.Dominio.Domain.Entities;
@@ -8,7 +9,13 @@ namespace MinhaEmpresa.Dominio.Infra.DataBase.Contexts
 {
     public class MyContext : DbContext
     {
-        public MyContext(DbContextOptions<MyContext> options) : base(options)
+        private static IConfiguration config = new ConfigurationBuilder()
+            .SetBasePath(AppContext.BaseDirectory)
+            .AddJsonFile("ef.config.json")
+            .Build();
+            
+        public MyContext() : base(new DbContextOptionsBuilder<MyContext>()
+            .UseNpgsql(config.GetConnectionString("MyConn")).Options)
         {
         }
 

@@ -15,4 +15,8 @@
     <ProjectReference Include="..\MinhaEmpresa.Dominio.Infra\MinhaEmpresa.Dominio.Infra.csproj" />
     <ProjectReference Include="..\MinhaEmpresa.Dominio.Domain\MinhaEmpresa.Dominio.Domain.csproj" />
   </ItemGroup>
+  <Target Name="CopyEfConfig" AfterTargets="AfterBuild;Publish">
+    <Copy SourceFiles="..\ef.config.json" DestinationFolder="$(PublishDir)" />
+    <Copy SourceFiles="..\ef.config.json" DestinationFolder="$(OutDir)" />
+  </Target>
 </Project>

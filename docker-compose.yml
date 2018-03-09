@@ -40,8 +40,11 @@ services:
       image: postgres:10-alpine
       environment:
             - POSTGRES_PASSWORD=teste123
+            - PGDATA=/datas/dominio-postgres/
       networks:
             - dominionet
+      volumes:
+            - /datas/dominio-postgres/:/datas/dominio-postgres/
 
 volumes:
    dominiopublish:

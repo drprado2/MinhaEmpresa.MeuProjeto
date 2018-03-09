@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {},
+    "/home/drprado2/.nuget/packages/": {},
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,14 +673,14 @@
       "projectUniqueName": "/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Domain/MinhaEmpresa.Dominio.Domain.csproj",
       "projectName": "MinhaEmpresa.Dominio.Domain",
       "projectPath": "/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Domain/MinhaEmpresa.Dominio.Domain.csproj",
-      "packagesPath": "/root/.nuget/packages/",
+      "packagesPath": "/home/drprado2/.nuget/packages/",
       "outputPath": "/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Domain/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "/home/drprado2/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

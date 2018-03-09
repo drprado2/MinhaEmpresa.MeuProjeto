@@ -6,11 +6,6 @@
         <e p="Controllers" t="Include">
           <e p="CustomerController.cs" t="Include" />
         </e>
-        <e p="Migrations" t="Include">
-          <e p="20180307065939_CriarBase.Designer.cs" t="Include" />
-          <e p="20180307065939_CriarBase.cs" t="Include" />
-          <e p="MyContextModelSnapshot.cs" t="Include" />
-        </e>
         <e p="MinhaEmpresa.Dominio.Api.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Startup.cs" t="Include" />
@@ -23,31 +18,6 @@
               <e p="MinhaEmpresa.Dominio.Api.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
-        </e>
-        <e p="publish" t="Include">
-          <e p="MinhaEmpresa.Dominio.Api.PrecompiledViews.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Api.PrecompiledViews.pdb" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Api.deps.json" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Api.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Api.pdb" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Api.runtimeconfig.json" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Domain.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Domain.pdb" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Infra.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Infra.pdb" t="Include" />
-          <e p="Npgsql.EntityFrameworkCore.PostgreSQL.dll" t="Include" />
-          <e p="Npgsql.dll" t="Include" />
-          <e p="appsettings.Development.json" t="Include" />
-          <e p="appsettings.json" t="Include" />
-          <e p="dotnet-ef.dll" t="Include" />
-          <e p="publish" t="Include">
-            <e p="MinhaEmpresa.Dominio.Api.deps.json" t="Include" />
-            <e p="MinhaEmpresa.Dominio.Api.runtimeconfig.json" t="Include" />
-            <e p="appsettings.Development.json" t="Include" />
-            <e p="appsettings.json" t="Include" />
-            <e p="web.config" t="Include" />
-          </e>
-          <e p="web.config" t="Include" />
         </e>
       </e>
       <e p="MinhaEmpresa.Dominio.Domain" t="IncludeRecursive">
@@ -75,11 +45,6 @@
             </e>
           </e>
         </e>
-        <e p="publish" t="Include">
-          <e p="MinhaEmpresa.Dominio.Domain.deps.json" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Domain.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Domain.pdb" t="Include" />
-        </e>
       </e>
       <e p="MinhaEmpresa.Dominio.Infra" t="IncludeRecursive">
         <e p="DataBase" t="Include">
@@ -91,6 +56,13 @@
           </e>
           <e p="RepositoryBase.cs" t="Include" />
         </e>
+        <e p="Migrations" t="Include">
+          <e p="20180309181519_CriacaoBase.Designer.cs" t="Include" />
+          <e p="20180309181519_CriacaoBase.cs" t="Include" />
+          <e p="20180309182314_AdicionadoEnderecoCustomer.Designer.cs" t="Include" />
+          <e p="20180309182314_AdicionadoEnderecoCustomer.cs" t="Include" />
+          <e p="MyContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="MinhaEmpresa.Dominio.Infra.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -99,40 +71,6 @@
               <e p="MinhaEmpresa.Dominio.Infra.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
-        </e>
-        <e p="publish" t="Include">
-          <e p="Microsoft.EntityFrameworkCore.Design.dll" t="Include" />
-          <e p="Microsoft.EntityFrameworkCore.Relational.dll" t="Include" />
-          <e p="Microsoft.EntityFrameworkCore.dll" t="Include" />
-          <e p="Microsoft.Extensions.Caching.Abstractions.dll" t="Include" />
-          <e p="Microsoft.Extensions.Caching.Memory.dll" t="Include" />
-          <e p="Microsoft.Extensions.Configuration.Abstractions.dll" t="Include" />
-          <e p="Microsoft.Extensions.Configuration.FileExtensions.dll" t="Include" />
-          <e p="Microsoft.Extensions.Configuration.Json.dll" t="Include" />
-          <e p="Microsoft.Extensions.Configuration.dll" t="Include" />
-          <e p="Microsoft.Extensions.DependencyInjection.Abstractions.dll" t="Include" />
-          <e p="Microsoft.Extensions.DependencyInjection.dll" t="Include" />
-          <e p="Microsoft.Extensions.FileProviders.Abstractions.dll" t="Include" />
-          <e p="Microsoft.Extensions.FileProviders.Physical.dll" t="Include" />
-          <e p="Microsoft.Extensions.FileSystemGlobbing.dll" t="Include" />
-          <e p="Microsoft.Extensions.Logging.Abstractions.dll" t="Include" />
-          <e p="Microsoft.Extensions.Logging.dll" t="Include" />
-          <e p="Microsoft.Extensions.Options.dll" t="Include" />
-          <e p="Microsoft.Extensions.Primitives.dll" t="Include" />
-          <e p="Microsoft.IdentityModel.Protocols.dll" t="Include" />
-          <e p="Microsoft.IdentityModel.Protocols.xml" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Domain.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Domain.pdb" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Infra.deps.json" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Infra.dll" t="Include" />
-          <e p="MinhaEmpresa.Dominio.Infra.pdb" t="Include" />
-          <e p="Newtonsoft.Json.dll" t="Include" />
-          <e p="Npgsql.EntityFrameworkCore.PostgreSQL.dll" t="Include" />
-          <e p="Npgsql.dll" t="Include" />
-          <e p="Remotion.Linq.dll" t="Include" />
-          <e p="System.Interactive.Async.dll" t="Include" />
-          <e p="System.Runtime.CompilerServices.Unsafe.dll" t="Include" />
-          <e p="dotnet-ef.dll" t="Include" />
         </e>
       </e>
       <e p="MinhaEmpresa.Dominio.sln" t="IncludeFlat" />

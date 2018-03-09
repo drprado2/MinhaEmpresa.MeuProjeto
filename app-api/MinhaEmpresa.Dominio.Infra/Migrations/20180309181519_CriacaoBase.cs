@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace MinhaEmpresa.Dominio.Api.Migrations
+namespace MinhaEmpresa.Dominio.Infra.Migrations
 {
-    public partial class CriarBase : Migration
+    public partial class CriacaoBase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,10 +12,10 @@ namespace MinhaEmpresa.Dominio.Api.Migrations
                 name: "Customer",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(nullable: false),
-                    Idade = table.Column<int>(nullable: false),
-                    Nome = table.Column<string>(maxLength: 120, nullable: false),
-                    Telefone = table.Column<string>(maxLength: 20, nullable: true)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Idade = table.Column<int>(type: "int4", nullable: false),
+                    Nome = table.Column<string>(type: "varchar(120)", maxLength: 120, nullable: false),
+                    Telefone = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: true)
                 },
                 constraints: table =>
                 {

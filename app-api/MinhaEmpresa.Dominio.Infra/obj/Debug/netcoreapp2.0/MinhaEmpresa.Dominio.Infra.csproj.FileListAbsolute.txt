@@ -8,3 +8,5 @@
 /home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Infra/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Infra.AssemblyInfo.cs
 /home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Infra/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Infra.dll
 /home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Infra/obj/Debug/netcoreapp2.0/MinhaEmpresa.Dominio.Infra.pdb
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Infra/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Protocols.dll
+/home/drprado2/Documents/projects/projeto-modelo/MinhaEmpresa.MeuProjeto/app-api/MinhaEmpresa.Dominio.Infra/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Protocols.xml

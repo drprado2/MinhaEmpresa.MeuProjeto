@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using MinhaEmpresa.Dominio.Infra.DataBase.Contexts;
 using System;
 
-namespace MinhaEmpresa.Dominio.Api.Migrations
+namespace MinhaEmpresa.Dominio.Infra.Migrations
 {
     [DbContext(typeof(MyContext))]
     partial class MyContextModelSnapshot : ModelSnapshot
@@ -18,12 +18,14 @@ namespace MinhaEmpresa.Dominio.Api.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
+                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
 
             modelBuilder.Entity("MinhaEmpresa.Dominio.Domain.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Endereco");
 
                     b.Property<int>("Idade");
 

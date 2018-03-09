@@ -29,16 +29,9 @@ namespace MinhaEmpresa.Dominio.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddEntityFrameworkNpgsql()
-                .AddDbContext<MyContext>(
-                    options =>
-                        options.UseNpgsql(Configuration.GetConnectionString("MyConn"),
-                            x => x.MigrationsAssembly("MinhaEmpresa.Dominio.Api")));
-            
+            services.AddEntityFrameworkNpgsql().AddDbContext<MyContext>();
             services.BuildServiceProvider().GetService<MyContext>().Database.Migrate();
-            
             RegisterDependencyInjection(services);
-            services.AddScoped<MyContext>();
             services.AddMvc();
         }
         
