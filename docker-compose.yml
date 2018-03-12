@@ -1,33 +1,56 @@
+# Necessário informar que é a versão 3.0, para usar os novos recursos
+# como Docker Swarm
 version: '3.0'
 
 services:
+  # O reverse proxy é o serviço com NGinx que é a única interface aberta para internet
+  # Apenas ele possui certificado digital para comunicação SSL, e todo a comunicação
+  # seja pros serviços ASP NET pro APP React ou Node passa pelo proxy
+  # com base na url e no arquivo de configurações do NGinx ele fazer o redirecionamento
+  # para o serviço correto
    reverseproxy:
+    # com o build informamos onde está o nosso Dockerfile em "context"
+    # E qual o nome do dockerfile, tirando aquela regra do dockerfile chamar Dockerfile
       build:
-         context: ./
+         context: ./reverseproxy
          dockerfile: Dockerfile-reverse-proxy
+         # A ideia aqui é compartilhar os htmls locais com os do NGinx
+         # porém isso não será necessário com o uso de um app react
       volumes:
          - ./reverseproxy/nginx/html:/usr/share/nginx/html
+         # deve existir o mapeamento das portas apenas desse serviço,
+         # os demais não serão acessíveis pelo HOST, e serão todos acessados
+         # por comunicação entre containers
       ports:
+        # porta 80 pro redirect e pro localhost
          - 80:80
+        # 443 pro SSL
          - 443:443
+        # Aqui usamos a rede que possibilita o NGinx enxergar o ASPNET e o React
       networks:
          - dominionet
+        # A depêndencia é importante para definir a ordem que os serviços serão levantados
       depends_on:
          - dominiohost
 
+        # Esse serviço apenas é necessário para publicar a aplicação ASP NET
    dominiobuilder:
       build:
          context: ./app-api
          dockerfile: Dockerfile-dominio-builder
       depends_on:
             - dominiodb
+            # Esse volume é importante pois o pacote publicado aqui será transferido para
+            # o container responsável por rodar o serviço
       volumes:
          - dominiopublish:/publish  
 
+  # Esse é o serviço que hospeda a aplicação ASP NET
    dominiohost:
       build:
          context: ./app-api
          dockerfile: Dockerfile-dominio-host
+         # Note que o volume que populamos com o serviço de build agora usamos para levantar o app
       volumes:
          - dominiopublish:/app
       depends_on:
@@ -36,18 +59,34 @@ services:
       networks:
          - dominionet
 
+  # Serviço com POSTGRES
    dominiodb:
+    # Nesse caso não foi usado um Dockerfile e sim baixado uma imagem já pronta do Docker-Hub
       image: postgres:10-alpine
+      # Variáveis de ambient essênciais para o funcionamento do POSTGRES
       environment:
+            # Essa abaixo define a senha do banco
             - POSTGRES_PASSWORD=teste123
+            # Essa define um diretório onde os arquivos do banco serão salvos
+            # ATENÇÃO isso é extremamente importante, pois se você não salvar no HOST os arquivos
+            # do banco, quando você deletar o container perderá todos os registros
             - PGDATA=/datas/dominio-postgres/
       networks:
             - dominionet
       volumes:
+            # Note que mapeamos um volume e o caminho desse volume no container é o mesmo caminho
+            # que colocamos na variável de ambiente PGDATA, esse diretório aqui mapeado
+            # é onde ficarão todos os arquivos do banco mesmo após o container ser deletado
             - /datas/dominio-postgres/:/datas/dominio-postgres/
 
 volumes:
+  # criação do volume para armazenar o pacote publicado do ASP NET
    dominiopublish:
 
+  # Rede para comunicação entre os containers
 networks:
    dominionet:
+
+  # *** COMANDOS PARA USAR O DOCKER-COMPOSE ***
+  # 1 - Subir tudo: docker-compose up -d  => Deve estar no diretório do docker-compose.yml
+  # 2 - derrubar e limpar tudo: docker-compose down -v --rmi all

@@ -15,6 +15,11 @@
     <ProjectReference Include="..\MinhaEmpresa.Dominio.Infra\MinhaEmpresa.Dominio.Infra.csproj" />
     <ProjectReference Include="..\MinhaEmpresa.Dominio.Domain\MinhaEmpresa.Dominio.Domain.csproj" />
   </ItemGroup>
+  <!-- Note que usamos a tag Target para copiar o arquivo de configuração do EF -->
+  <!-- Usamos ela com AfterTargets tanto depois de Buildar quanto publicar -->
+  <!-- Usamos duas tags Copy para copiar para o diretório de Build e de Publish
+       isso é feito para funcionar tanto com dotnet run quanto com dotnet publish
+   -->
   <Target Name="CopyEfConfig" AfterTargets="AfterBuild;Publish">
     <Copy SourceFiles="..\ef.config.json" DestinationFolder="$(PublishDir)" />
     <Copy SourceFiles="..\ef.config.json" DestinationFolder="$(OutDir)" />

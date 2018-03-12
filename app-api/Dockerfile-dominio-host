@@ -1,6 +1,9 @@
+# Dockerfile usado para hospedar com Kestrel a aplicação
 FROM microsoft/aspnetcore:2.0
 
+# Configuramos como diretório padrão de trabalho o /app onde está o pacote publicado
 WORKDIR /app
 
+# Rodamos dotnet com parâmetro a dll da aplicação Web Api
 ENTRYPOINT ["dotnet", "MinhaEmpresa.Dominio.Api.dll"]
 

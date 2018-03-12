@@ -1,0 +1,20 @@
+# Dockerfile usado para criar a imagem do proxy reverso
+# partimos do Nginx no alpine para ser o mais leve possível
+FROM nginx:alpine
+
+# Remover o arquivo de configuração já existente para garantir que não haverá conflitos
+# ao copiar o nosso. Criar um diretório para guardar os arquivos do certificado digital
+RUN rm /etc/nginx/conf.d/default.conf && cd / && mkdir certificate
+
+# Adicionando arquivo de certificado digital
+ADD ./nginx/certificate-files/fullchain.pem /certificate/
+
+# Adicionando arquivo de certificado digital
+ADD ./nginx/certificate-files/privkey.pem /certificate/
+
+# Adicionando o arquivo de configuração, de uma olhada nele é lá que está o segredo
+ADD ./nginx/config/default.conf /etc/nginx/conf.d/
+
+# Comando para rodar o NGINX
+CMD ["nginx", "-g", "daemon off;"]
+

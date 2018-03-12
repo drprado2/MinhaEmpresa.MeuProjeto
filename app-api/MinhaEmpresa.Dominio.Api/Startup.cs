@@ -29,10 +29,21 @@ namespace MinhaEmpresa.Dominio.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // Aqui adicionamos o uso de EF com Postgres, o MyContext é o nosso DbContext criado no projeto de Infra
             services.AddEntityFrameworkNpgsql().AddDbContext<MyContext>();
+            
+            // Aqui nós rodamos o update-database do migrations sobre o DbContext MyContext
+            // Isso pode ser feito manualmente através da linha de comando: dotnet ef database update
             services.BuildServiceProvider().GetService<MyContext>().Database.Migrate();
+            
+            // Método privado que registra as depêndencia com o framework de injeção já presente no aspnet core
             RegisterDependencyInjection(services);
+            
+            // Aqui habilitamos o uso do framework Mvc para podermos usar os controllers
             services.AddMvc();
+            
+            // Aqui adicionamos o CORS, note que o AddCors deve vir depois do AddMvc
+            services.AddCors();
         }
         
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -42,12 +53,29 @@ namespace MinhaEmpresa.Dominio.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            // Configurandoo CORS para aceita tudo, Note que o Cors aqui deve vir antes do Mvc
+            app.UseCors(builder => builder
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin()
+                .AllowCredentials()
+            );
+            
+            // Aqui usamos o Mvc com o padrão de rotas
             app.UseMvcWithDefaultRoute();
         }
 
         private void RegisterDependencyInjection(IServiceCollection services)
         {
+            // Registrando depêndencias no framework já presente no asp net core
+            // Temos vários ciclos de vida como Scoped Transient e Singleton
+            // Note que o MyContext é inserido como Scoped ou seja ele é único do ínicio ao fim da request
+            // Quais quer classes que solicitem uma instancia dele virá a mesma instancia para atender toda a request
+            // Porém em requests distintas são instancias diferentes, diferente do Singleton
             services.AddScoped<MyContext>();
+            
+            // Praticamente todos os demais componentes são inseridos como Transient, cada componente que solicita
+            // uma instancia dele uma nova instancia será gerada
             services.AddTransient<IRepositoryBase<Customer>, RepositoryBase<Customer>>();
             services.AddTransient<ICustomerService, CustomerService>();
         }

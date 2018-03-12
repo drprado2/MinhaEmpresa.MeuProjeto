@@ -18,6 +18,8 @@ namespace MinhaEmpresa.Dominio.Infra.DataBase
         
         public async Task CreateAsync(T entity)
         {
+            // Note que usamos os métodos assíncronos do EF
+            // É possível saber disso pelo pós fixo Async no nome dos métodos
             await _context.Set<T>().AddAsync(entity);
             await _context.SaveChangesAsync();
         }

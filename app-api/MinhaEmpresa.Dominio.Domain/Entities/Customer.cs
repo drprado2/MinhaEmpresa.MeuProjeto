@@ -4,6 +4,7 @@ namespace MinhaEmpresa.Dominio.Domain.Entities
 {
     public class Customer : EntityBase
     {
+        // Devemos ter um construtor sem parâmetros para o EF
         protected Customer()
         {
         }

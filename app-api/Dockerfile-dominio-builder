@@ -1,11 +1,16 @@
+# Dockerfile usado para publicar a aplicação ASPNET
 FROM microsoft/aspnetcore-build:2.0
 
+# Criado diretório para publicar pacote e receber o código fonte
 RUN mkdir projects && mkdir /publish 
 
+# Adicionado arquivos do código fonte para o container
 ADD ./ /projects/
 
+# Setado diretório padrão de trabalho do container
 WORKDIR /projects
 
+# Restaurar depêndencias e publicar aplicação
 RUN dotnet restore &&\
     cd MinhaEmpresa.Dominio.Api &&\
    dotnet publish --output /publish/
