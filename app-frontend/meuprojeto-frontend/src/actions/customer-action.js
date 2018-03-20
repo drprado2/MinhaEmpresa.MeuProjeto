@@ -9,7 +9,7 @@ import CustomerService from './../services-api/customer-service';
 // Que sempre possui uma propriedade type que identifica a ação
 // e as vezes um payload que é uma Promise referente à chamada à API REST
 // Note que para podermos retornar uma Promise no payload precisamos do
-// Middleware REDUX-PROMISE já explicado no arquivo App.js
+// Middleware REDUX-PROMISE já explicado no arquivo App.bkp.js
 export const getCustomers = () => {
   return {
     type: actionTypes.GET_CUSTOMERS,

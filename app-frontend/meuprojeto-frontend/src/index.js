@@ -2,22 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
+import "./index.css";
+
 // O componente BrowserRouter será usado para routeirizar a aplicação
 // para mais detalhes veja o link
 // https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
-import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 
+
 ReactDOM.render(
     // Perceba que ligamos o <BrowserRouter como componente de maior ordem
-    <BrowserRouter>
         <App />
-    </BrowserRouter>
     , document.getElementById('root'));
 registerServiceWorker();
 
-// Por aqui é só vá para o arquivo App.js
+// Por aqui é só vá para o arquivo App.bkp.js
 
 
 /*
