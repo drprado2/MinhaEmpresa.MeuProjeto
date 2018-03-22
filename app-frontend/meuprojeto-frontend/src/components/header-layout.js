@@ -52,10 +52,6 @@ export const HeaderLayout = props => {
     props.history.push({pathname: url});
   }
 
-  function logOut(){
-    alert("Fazer logout");
-  }
-
   return (
     <Header style={{
       backgroundColor: 'rgb(0, 21, 41)',
@@ -76,7 +72,7 @@ export const HeaderLayout = props => {
       <div style={{flexGrow: 1}} />
       <Popover
         placement="bottomRight"
-        content={<UserContent logout={logOut} onItemClick={onItemClick} />}
+        content={<UserContent logout={props.logout} onItemClick={onItemClick} />}
         title="Meu Usuário"
       >
         <Icon type="user" style={iconStyle} />

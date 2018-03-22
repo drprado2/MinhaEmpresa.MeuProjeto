@@ -1,0 +1,52 @@
+#main-login .login-form {
+    max-width: 300px;
+}
+#main-login .login-form-forgot {
+    float: right;
+}
+#main-login .login-form-button {
+    width: 100%;
+}
+
+#main-login a {
+    color: #757575;
+}
+
+#main-login a:hover {
+    color: #424242;
+}
+
+#main-login .ant-btn-primary {
+    background-color: #757575;
+    border-color: #757575;
+}
+
+#main-login .ant-btn-primary:hover{
+    animation: btn-primary-hover 0.144s linear;
+    background-color: #424242;
+    border-color: #424242;
+}
+
+#main-login .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #757575;
+    border-color: #757575;
+}
+
+#main-login .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: #424242;
+}
+
+@keyframes btn-primary-hover {
+    0% {
+        background-color: #757575;
+        border-color: #757575;
+    }
+    50% {
+        background-color: #616161;
+        border-color: #616161;
+    }
+    100% {
+        background-color: #424242;
+        border-color: #424242;
+    }
+}

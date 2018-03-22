@@ -20,11 +20,6 @@ class SideMenu extends React.Component {
     '4': '/financeiro/contas'
   }
 
-  componentDidMount(){
-    this.props.history.push({pathname: this.referenceLink[this.selectedLink]});
-  }
-
-
   onCollapse = (collapsed) => {
     console.log(collapsed);
     this.setState({ collapsed });

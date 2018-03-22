@@ -1,7 +1,7 @@
+export const actionsTypes = {
+  AUTHENTICATE_START: 'AUTHENTICATE_START',
+  AUTHENTICATE_ERROR: 'AUTHENTICATE_ERROR',
+  AUTHENTICATE_DONE: 'AUTHENTICATE_DONE',
+  LOGOUT: 'LOGOUT'
+};
 
-// Basicamente nesse arquivo armazenamos todas as action types que são strings
-// usadas pelas actions e pelos reducers para identificar qual ação está sendo
-// executada
-const actionsTypes = { GET_CUSTOMERS : 'GET_CUSTOMERS' };
-
-export default actionsTypes;
