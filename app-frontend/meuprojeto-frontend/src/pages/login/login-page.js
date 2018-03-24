@@ -1,17 +1,18 @@
 import React from 'react';
 import "./login.css";
-import {Card, Form, Icon, Input, Button, Checkbox, Alert} from 'antd';
+import {Card, Form, Icon, Input, Button, Checkbox} from 'antd';
 import logo from "./../../img/xo-miseria03.png";
 import {authenticate} from './../../actions/authenticationActions';
 import {connect} from "react-redux";
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {Authenticator} from "../../authenticator";
+import {FormBase} from './../../components/form-base';
 
 const { Meta } = Card;
 const FormItem = Form.Item;
 
-class LoginForm extends React.Component{
+class LoginForm extends FormBase{
 
   login = (event) => {
     event.preventDefault();
@@ -30,7 +31,6 @@ class LoginForm extends React.Component{
 
   render() {
     const { getFieldDecorator } = this.props.form;
-    const {errors} = this.props;
     return (
       <div style={{
         display: 'flex',
@@ -39,19 +39,6 @@ class LoginForm extends React.Component{
         width: '100vw',
         height: '100vh'
       }}>
-        {errors &&
-        <div style={{minWidth: '300px', top: 30, position: 'absolute', margin: '0 auto', zIndex: 999}}>
-          <Alert
-            message="Algo deu errado!"
-            description={<ul>
-              {errors.map((x, index) => <li key={index}>{x}</li>)}
-            </ul>}
-            type="error"
-            showIcon
-            closable
-          />
-        </div>
-        }
         <div
           style={{
             backgroundImage: 'url(http://www.acpassessoria.com.br/wp-content/uploads/2015/06/abertura-empresa.jpg)',
@@ -88,14 +75,20 @@ class LoginForm extends React.Component{
             <Form onSubmit={this.login} className="login-form">
               <FormItem>
                 {getFieldDecorator('user', {
-                  rules: [{ required: true, message: 'Por favor preencha o usuário!' }],
+                  rules: [{ required: true, message: 'Por favor preencha o usuário!' },
+                    {validator: this.validateServerInputErrors}
+                  ],
+                  validateTrigger: 'onBlur'
                 })(
                   <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />
                 )}
               </FormItem>
-              <FormItem>
+              <FormItem >
                 {getFieldDecorator('password', {
-                  rules: [{ required: true, message: 'Por favor preencha a senha!' }],
+                  rules: [{required: true, message: 'Por favor preencha a senha'},
+                    {validator: this.validateServerInputErrors}
+                  ],
+                  validateTrigger: 'onBlur'
                 })(
                   <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
                 )}

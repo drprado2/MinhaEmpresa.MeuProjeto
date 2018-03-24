@@ -6,13 +6,14 @@ const INITIAL_STATE={
   userName: '',
   userLogin: '',
   userEmail: '',
+  loaded: false,
   errors: null
 }
 
 export const authenticationReducer = (state=INITIAL_STATE, action) => {
   switch(action.type){
     case(actionsTypes.AUTHENTICATE_START):{
-      return {...state, loading: true}
+      return {...state, errors: null, loading: true, loaded: false}
     }
     case(actionsTypes.AUTHENTICATE_ERROR):{
       return {...state, loading: false, errors: action.payload}

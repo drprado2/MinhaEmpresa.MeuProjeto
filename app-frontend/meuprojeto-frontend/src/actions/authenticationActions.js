@@ -7,8 +7,14 @@ const get = (values) => new Promise((resolve, reject) => {
     if(values.user === 'drprado2' && values.password === '123')
       resolve({userName: 'Adriano', userLogin : 'drprado2', userEmail: 'a@gmail.com'});
 
-    reject(["Login ou senha inválidos"]);
-  }, 3000)
+    let errors = [];
+
+    if(values.user !== 'drprado2') errors.push({ref: 'user', message: "O login é inválido"});
+    if(values.password !== '123') errors.push({ref: 'password', message: "A senha é inválida"});
+    errors.push({ref: 'genericError', message: "Erro genérico"});
+
+    reject(errors);
+  }, 1300)
 })
 
 export const authenticate = values => {
