@@ -1,5 +1,4 @@
 import React from 'react';
-import {Card, Form} from 'antd';
 import {showErrorMessage} from "./show-error-message";
 
 export class FormBase extends React.Component{
@@ -10,8 +9,7 @@ export class FormBase extends React.Component{
       this.errorFields = {};
       const generic = this.props.errors.filter(x => x.ref == 'genericError');
       showErrorMessage(generic);
-      this.props.form.validateFields({force: true}, err => {
-        console.log("Veja os erros que deu após fazer a att", err);
+      this.props.form.validateFieldsAndScroll({force: true}, err => {
         this.errorFields = err
       });
     }
@@ -19,7 +17,7 @@ export class FormBase extends React.Component{
 
   validateServerInputErrors = (rule, value, callback) => {
 
-    const {errors, form} = this.props;
+    const {errors} = this.props;
 
     const fieldAlreadyHaveError = !!this.errorFields[rule.field];
 

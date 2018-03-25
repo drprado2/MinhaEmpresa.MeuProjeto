@@ -9,7 +9,7 @@ import { Routes } from "./routes";
 
 import CenterLayout from "./components/center-layout";
 import { Layout } from 'antd';
-import {Login} from './pages/login/login-page';
+import LoginPage from './pages/login/login-page';
 import MenuLateral from './components/menu-lateral';
 
 import {Authenticator} from './authenticator';
@@ -27,7 +27,7 @@ class App extends React.Component{
         <Router history={history} >
           <Switch>
             <Route exact path="/login"
-                   component={Login} />
+                   component={LoginPage} />
             />
             <Layout style={{ minHeight: '100vh' }}>
               <MenuLateral history={history}/>
