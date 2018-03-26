@@ -1,13 +1,13 @@
 import React from 'react';
-import {authenticate} from './../../actions/authenticationActions';
+import {authenticate} from '../../actions/authentication-actions';
 import {connect} from "react-redux";
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
-import {Authenticator} from "../../authenticator";
-import {BackgroundBlurImage} from "./../../components/background-blur-image";
+import {Authenticator} from "../../utils/authenticator";
+import {BackgroundBlurImage} from "../../generic-components/background-blur-image";
 import {LoginPanel} from './login-panel';
 import LoginForm from "./login-form";
-import {FullBoxCentralizing} from "./../../components/full-box-centralizing";
+import {FullBoxCentralizing} from "../../generic-components/full-box-centralizing";
 import backgroundImage from './../../img/background-login-page.jpg';
 
 class LoginPage extends React.Component{

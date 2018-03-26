@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import "./login.css";
 import {Button, Checkbox, Form, Icon, Input} from "antd";
-import {FormBase} from "./../../components/form-base";
+import {FormBase} from "../../generic-components/form-base";
 
 const FormItem = Form.Item;
 

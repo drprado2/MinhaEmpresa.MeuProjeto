@@ -1,6 +1,6 @@
 import React from 'react';
-import { DeleteGridBtn } from "../../components/delete-grid-btn";
-import { EditGridBtn } from "../../components/edit-grid-btn";
+import { DeleteGridBtn } from "../../../generic-components/delete-grid-btn";
+import { EditGridBtn } from "../../../generic-components/edit-grid-btn";
 import { Table } from "antd";
 
 

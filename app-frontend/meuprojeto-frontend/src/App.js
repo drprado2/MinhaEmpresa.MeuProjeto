@@ -1,40 +1,23 @@
 import React from 'react';
-
 import { Provider } from 'react-redux';
 import {store, history} from './store';
-
-import createBrowserHistory from 'history/createBrowserHistory';
-import {Route, Router, Switch, Redirect} from "react-router-dom";
-import { Routes } from "./routes";
-
-import CenterLayout from "./components/center-layout";
-import { Layout } from 'antd';
-import LoginPage from './pages/login/login-page';
-import MenuLateral from './components/menu-lateral';
-
-import {Authenticator} from './authenticator';
-
-
-// const history = createBrowserHistory();
+import {Route, Router, Switch} from "react-router-dom";
+import { Pages } from "./utils/pages";
+import LoginPage from './specific-components/login/login-page';
+import MasterLayout from './generic-components/master-layout';
 
 class App extends React.Component{
 
   render(){
-    const isAuth = Authenticator.IsAuthenticated();
 
     return(
       <Provider store={store}>
         <Router history={history} >
           <Switch>
-            <Route exact path="/login"
-                   component={LoginPage} />
-            />
-            <Layout style={{ minHeight: '100vh' }}>
-              <MenuLateral history={history}/>
-              <CenterLayout history={history}>
-                <Routes history={history} />
-              </CenterLayout>
-            </Layout>
+            <Route exact path="/login" component={LoginPage} />
+            <MasterLayout>
+              <Pages history={history} />
+            </MasterLayout>
           </Switch>
         </Router>
       </Provider>

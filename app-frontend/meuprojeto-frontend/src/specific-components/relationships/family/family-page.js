@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Layout, Button, Icon, Input } from "antd";
-import {EditModal} from '../../components/edit-modal';
+import {EditModal} from '../../../generic-components/edit-modal';
 import {CustomerForm} from './family-form-fields';
 import {FamilyGrid} from "./family-grid";
 import {FamilyFilters} from "./family-filters";
-import {DeleteModal} from "../../components/delete-modal";
+import {DeleteModal} from "../../../generic-components/delete-modal";
 
 const { Content } = Layout;
 

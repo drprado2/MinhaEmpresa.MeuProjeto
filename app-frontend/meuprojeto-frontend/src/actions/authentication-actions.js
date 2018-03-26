@@ -1,5 +1,5 @@
 import {actionsTypes} from './action-types';
-import {Authenticator} from './../authenticator';
+import {Authenticator} from '../utils/authenticator';
 import { push } from 'react-router-redux';
 
 const get = (values) => new Promise((resolve, reject) => {

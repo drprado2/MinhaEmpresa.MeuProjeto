@@ -1,4 +1,5 @@
 export class Authenticator{
+
   static IsAuthenticated(){
     return localStorage.getItem('jwtAuth') || sessionStorage.getItem('jwtAuth');
   }
