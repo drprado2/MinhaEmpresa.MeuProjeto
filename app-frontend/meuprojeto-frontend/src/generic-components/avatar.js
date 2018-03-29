@@ -14,7 +14,8 @@ export const Avatar = props =>
     backgroundImage: `url(${props.avatarImg})`,
     backgroundSize: '100% 100%',
     marginBottom: '1em',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    boxShadow: '0px 0px 11px 2px rgba(0,0,0,0.75)'
   }}
     onClick={props.onClick}
   >

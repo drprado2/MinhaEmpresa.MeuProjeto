@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export const LogoutHeaderBtn = props =>
   <Tooltip placement="bottomLeft" title={"Sair da conta!"}>
     <Icon type="poweroff" style={{
-      color: 'white',
+      color: '#2A74FF',
       fontSize: 25,
       fontWeight: 'bold',
       cursor: 'pointer',

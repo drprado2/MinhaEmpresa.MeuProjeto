@@ -3,19 +3,6 @@ import {Avatar} from "./avatar";
 import exampleAvatarImg from "./../img/example-avatar-img.jpeg";
 import PropTypes from 'prop-types';
 
-export const UserInfoText = props =>
-  <span
-    style={{
-      height: '1.3em',
-      fontWeight: 'bold',
-      color: 'white',
-      cursor: 'pointer'
-    }}
-    onClick={props.onClick}
-  >
-    {props.text}
-  </span>
-
 export const SideMenuHeader = props => {
 
   return (
@@ -25,14 +12,38 @@ export const SideMenuHeader = props => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      borderRight: '0px',
+      borderBottom: '1px solid'
     }}>
       <Avatar
         avatarImg={props.avatar}
         onClick={props.onUserInfoClick}
       />
-      <UserInfoText onClick={props.onUserInfoClick} text={props.userName} />
-      <UserInfoText onClick={props.onUserInfoClick} text={props.userEmail} />
+      <span
+        style={{
+          height: '1.3em',
+          fontWeight: 'bold',
+          color: '#212121',
+          fontSize: '1.2em',
+          cursor: 'pointer'
+        }}
+        onClick={props.onUserInfoClick}
+      >
+        {props.userName}
+      </span>
+      <span
+        style={{
+          height: '1.3em',
+          fontWeight: 'bold',
+          color: '#424242',
+          fontSize: '0.9em',
+          cursor: 'pointer'
+        }}
+        onClick={props.onUserInfoClick}
+      >
+        {props.userEmail}
+      </span>
     </div>
   )
 }

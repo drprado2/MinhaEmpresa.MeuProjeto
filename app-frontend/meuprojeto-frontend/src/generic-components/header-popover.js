@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 export const HeaderPopover = props => {
 
   const iconStyle = {
-    color: 'white',
+    color: '#2A74FF',
     fontSize: 25,
     fontWeight: 'bold',
     cursor: 'pointer',

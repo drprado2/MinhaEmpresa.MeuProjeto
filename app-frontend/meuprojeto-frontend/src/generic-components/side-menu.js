@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Layout, Menu } from 'antd';
+import {Icon, Layout, Menu} from 'antd';
 import {SideMenuHeader} from "./side-menu-header";
 import {DashboardMenuItem} from './../specific-components/dashboard/dashboard-menu-item';
 import {RelationshipSubmenu} from './../specific-components/relationships/relationship-submenu';
@@ -25,6 +25,10 @@ export default class SideMenu extends React.Component {
 
   onCollapse = collapsed => this.setState({ collapsed });
 
+  componentDidMount(){
+    this.props.menuClick("item_1");
+  }
+
   onMenuClick = ({key}) => {
     this.props.menuClick(key);
   }
@@ -32,18 +36,25 @@ export default class SideMenu extends React.Component {
   render() {
     return (
         <Sider
+          trigger={<div style={{backgroundColor: 'white'}}>
+            {this.state.collapsed
+              ? <Icon type="menu-unfold" style={{color: '#2A74FF', fontWeight: 'bold', fontSize: '1.2em'}} />
+              : <Icon type="menu-fold" style={{color: '#2A74FF', fontWeight: 'bold', fontSize: '1.2em'}} />
+            }
+          </div>}
           id="side-menu"
           collapsible
           collapsed={this.state.collapsed}
           onCollapse={this.onCollapse}
-          style={{minHeight: '100vh'}}
+          style={{minHeight: '100vh', backgroundColor: '#e0e0e0', }}
         >
           <Menu
             onClick={this.onMenuClick}
-            theme="dark"
+            theme="light"
             defaultSelectedKeys={['item_1']}
             forceSubMenuRender={true}
             mode="inline"
+            style={{borderRight: '0px'}}
           >
             {!this.state.collapsed
               ? <SideMenuHeader/>

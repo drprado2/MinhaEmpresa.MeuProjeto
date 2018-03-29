@@ -7,12 +7,13 @@ import {UserHeaderPopover} from './../specific-components/user/user-header-popov
 
 export const Header = props =>
     <Layout.Header style={{
-      backgroundColor: 'rgb(0, 21, 41)',
+      backgroundColor: 'white',
       display: 'flex',
       padding: 0,
       flexDirection: 'row',
       justifyContent: 'flex-start',
-      alignItems: 'center'
+      alignItems: 'center',
+      borderBottom: '2px solid #2A74FF'
     }} >
       <HeaderLogo/>
       <div style={{flexGrow: 1}} />
