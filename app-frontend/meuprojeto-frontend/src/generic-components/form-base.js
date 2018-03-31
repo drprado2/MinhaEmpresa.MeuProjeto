@@ -21,15 +21,19 @@ export class FormBase extends React.Component{
 
     const fieldAlreadyHaveError = !!this.errorFields[rule.field];
 
-    if(fieldAlreadyHaveError)
+    if(fieldAlreadyHaveError){
       callback();
+      return;
+    }
 
     const existErrors = errors && errors.filter(x => x.ref === rule.field).length > 0;
 
     const getErrorMessage = () => errors.filter(x => x.ref === rule.field)[0].message;
 
-    if(existErrors)
+    if(existErrors){
       callback(getErrorMessage())
+      return;
+    }
 
     callback();
   }

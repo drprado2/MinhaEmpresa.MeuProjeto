@@ -1,6 +1,7 @@
 import {actionsTypes} from './action-types';
 import {Authenticator} from '../utils/authenticator';
 import { push } from 'react-router-redux';
+import {FetchMock} from "./../mock-api/fetch-mock";
 
 const get = (values) => new Promise((resolve, reject) => {
   setTimeout(()=>{
@@ -19,16 +20,45 @@ const get = (values) => new Promise((resolve, reject) => {
 
 export const authenticate = values => {
   return dispatch => {
-    console.log("Olha o dispatcher: ", dispatch)
     dispatch({type: actionsTypes.AUTHENTICATE_START});
-    get(values)
+    FetchMock.post("users/authenticate", values)
       .then(x =>{
+        if(!x.ok){
+          console.log("Cheguei aqui o response não está ok")
+          throw x;
+        }
+        return x.json();
+      })
+      .then(x => {
         Authenticator.SetAuth(values.rememberMe, JSON.stringify(x));
         dispatch(push('/dashboard'));
         dispatch({type: actionsTypes.AUTHENTICATE_DONE, payload: x});
       })
-      .catch(x => dispatch({type: actionsTypes.AUTHENTICATE_ERROR, payload: x}));
+      .catch(x => {
+        console.log("cheguei ao catch", x);
+        // x.status == 400 ? x.json() : [{ref: 'genericError', message: "Ocorreu um erro inesperado tente novamente!"}]
+        return x.json();
+      })
+      .then(x =>{
+        console.log("Cheguei ao ultimo then", x)
+        dispatch({type: actionsTypes.AUTHENTICATE_ERROR, payload: x});
+      })
   }
+}
+
+const resolveError = response =>{
+  let error;
+  switch(response.status){
+    case(404):
+      error = [{ref: 'genericError', message: "O recurso solicitado não existe!"}];
+      break;
+    case(400):
+      error = response.json();
+      break;
+    default:
+      error = [{ref: 'genericError', message: "Ocorreu um erro inesperado tente novamente!"}];
+  }
+  return error;
 }
 
 export const logout = () => {

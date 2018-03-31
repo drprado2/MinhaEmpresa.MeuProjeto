@@ -21,12 +21,12 @@ class LoginForm extends FormBase{
   render(){
 
     const { getFieldDecorator } = this.props.form;
-    const {loading} = this.props;
+    const {loading, onCreateUser} = this.props;
 
     return (
       <div id="main-login" >
         <Form onSubmit={this.onLogin} className="login-form">
-          <FormItem>
+          <FormItem hasFeedback>
             {getFieldDecorator('user', {
               rules: [
                 { required: true, message: 'Por favor preencha o usuário!' },
@@ -37,7 +37,7 @@ class LoginForm extends FormBase{
               <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Username" />
             )}
           </FormItem>
-          <FormItem >
+          <FormItem hasFeedback>
             {getFieldDecorator('password', {
               rules: [
                 {required: true, message: 'Por favor preencha a senha'},
@@ -45,7 +45,7 @@ class LoginForm extends FormBase{
               ],
               validateTrigger: 'onBlur'
             })(
-              <Input prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
+              <Input type="password" prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} type="password" placeholder="Password" />
             )}
           </FormItem>
           <FormItem>
@@ -59,7 +59,7 @@ class LoginForm extends FormBase{
             <Button loading={loading} type="primary" htmlType="submit" className="login-form-button">
               Logar
             </Button>
-            Ou <a href="">registrar agora!</a>
+            Ou <a onClick={onCreateUser}>registrar agora!</a>
           </FormItem>
         </Form>
       </div>
@@ -72,5 +72,6 @@ export default Form.create()(LoginForm);
 LoginForm.propTypes={
   onLogin: PropTypes.func.isRequired,
   loading: PropTypes.bool.isRequired,
-  errors: PropTypes.array
+  errors: PropTypes.array,
+  onCreateUser: PropTypes.func.isRequired
 }

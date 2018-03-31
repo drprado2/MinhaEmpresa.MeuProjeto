@@ -16,6 +16,7 @@ export const authenticationReducer = (state=INITIAL_STATE, action) => {
       return {...state, errors: null, loading: true, loaded: false}
     }
     case(actionsTypes.AUTHENTICATE_ERROR):{
+      console.log("Chegou no reducer de autenticação veja o erro", action.payload);
       return {...state, loading: false, errors: action.payload}
     }
     case(actionsTypes.AUTHENTICATE_DONE):{

@@ -19,3 +19,12 @@
     color: #666;
 }
 
+.ant-form-item {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ant-form-item-label {
+    line-height: 28px;
+}
+

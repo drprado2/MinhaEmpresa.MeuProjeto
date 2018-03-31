@@ -36,13 +36,15 @@ export class CrudBase{
   }
 
   get = filter => {
-    const page = filter.page ? filter.page : 1;
-    const itemsPerPage = filter.itemsPerPage ? filter.itemsPerPage : 0;
+    const page = filter && filter.page ? filter.page : 1;
+    const itemsPerPage = filter && filter.itemsPerPage ? filter.itemsPerPage : 0;
 
     const filteredItems = this.dataSource.filter(x => {
       let result = true;
-      for (let key in x){
-        result = filter[key] ? filter[key] === x[key] : true;
+      for(let key in filter){
+        result = x[key] === filter[key];
+        if(!result)
+          break;
       }
       return result;
     });
@@ -50,7 +52,7 @@ export class CrudBase{
     const totalItems = filteredItems.length;
     const totalPages = itemsPerPage > 0 ? Math.ceil(totalItems / itemsPerPage) : 1;
 
-    const paginatedItems = itemsPerPage
+    const paginatedItems = itemsPerPage > 0 && filteredItems.length > itemsPerPage
       ? filteredItems.slice((page - 1) * itemsPerPage)
       : filteredItems;
 
